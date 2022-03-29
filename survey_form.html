@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: grey;    
+            padding-left: 160px ;
+            /* background-image: url("stadium.jpg"); */
+            
+        }
+        .image{
+            background-repeat: no-repeat;
+            display: block;
+            margin: auto auto auto 15px;
+        }
+        h1{
+            padding-left: 435px;
+        }
+        .container{
+            border: solid 2px black;
+            width: fit-content;
+            background-color: rgb(10, 16, 88);
+            padding-left: 150px;
+            padding-top: 50px;
+            font-size: x-large;
+        }
+        #form{
+            /* border: solid 2px black;
+            width: fit-content;
+            background-color: rgb(248, 187, 117);
+            padding-left: 150px;
+            padding-top: 50px;
+            font-size: x-large; */
+            align-items: center;
+            color: white;
+            opacity: 0.77;
+        }
+        .form-control{
+            padding-bottom: 50px; 
+            /* position: absolute;
+            top: 50px;
+            left: 50px;
+            text-align: center; */
+        }
+        #foot{
+            padding-left: 380px;
+            padding-bottom: 35px; 
+        }
+        .myText{
+            width: 300px;
+            height: 25px;
+        }
+        .btns{
+            width: 70px;
+            height: 30px;
+        }
+        label{
+            /* position: absolute; */
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Athlete Survey Form</h1>
+    <form id="form">
+        <div class="container">
+            <img src="logo.png" alt="Error loading" class="image"><br>
+            <div class="form-control">
+                <label for="name" id="label-name">Name :&nbsp;&nbsp;</label>
+                <input type="text" id="name" class="myText" placeholder="Enter Your Name"> 
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email">E-mail :</label>
+                <input type="email" id="email" class="myText" placeholder="Enter your email">
+            </div>
+            <div class="form-control">
+                <label for="age" id="label-age">Age : &nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="age" class="myText" placeholder="Enter your age">
+            </div>
+            <div class="form-control">
+                <label for="sport" id="form-sport">What Sport Do You Play?</label> <br>
+                <select name="sport" id="sport" class="myText">
+                    <option value="">--Please select an option--</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="taekwondo">Taekwondo</option>
+                    <option value="volleyball">Volleyball</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="ques1" id="ques1">What is your GPA?</label><br>
+            <input type="radio" id="ques1" name="ques1">9.0 to 10.0 <br>
+            <input type="radio" id="ques1" name="ques1">8.0 to 8.9 <br>
+            <input type="radio" id="ques1" name="ques1">7.0 to 7.9 <br>
+            <input type="radio" id="ques1" name="ques1">Below 7.0 <br>
+        </div>
+        <div class="form-control">
+            <label for="ques2" id="ques2">How difficult it is to balance your athletic and academic responsibilities?</label><br>
+            <input type="radio" id="ques2" name="ques2"> Very Difficult <br>
+            <input type="radio" id="ques2" name="ques2"> Somewhat Difficult <br>
+            <input type="radio" id="ques2" name="ques2"> Not so Difficult <br>
+        </div>
+        <div class="form-control">
+            <label for="ques3" id="ques3">How much pressure do parents put on athletes in this school?</label><br>
+            <input type="radio" id="ques3" name="ques3"> Too much <br>
+            <input type="radio" id="ques3" name="ques3"> The right amount <br>
+            <input type="radio" id="ques3" name="ques3"> Too little <br>
+        </div>
+        <div class="form-control">
+            <label for="ques4" id="ques4">How understanding is your coach about your academic responsibilities?</label><br>
+            <input type="radio" id="ques4" name="ques4"> Very understanding <br>
+            <input type="radio" id="ques4" name="ques4"> Somewhat understanding <br>
+            <input type="radio" id="ques4" name="ques4"> Not so understanding <br>
+        </div>
+        <div class="form-control">
+            <label for="ques5" id="ques5">How understanding are your teachers about your athletic responsibilities?</label><br>
+            <input type="radio" id="ques5" name="ques5"> Very understanding <br>
+            <input type="radio" id="ques5" name="ques5"> Somewhat understanding <br>
+            <input type="radio" id="ques5" name="ques5"> Not so understanding <br>
+        </div>
+        <div class="form-control">
+            <label for="ques6" id="ques6">Doe this school give too much attention to it's sports programs, too little or about the right amount of attention?</label><br>
+            <input type="radio" id="ques6" name="ques6"> Too much <br>
+            <input type="radio" id="ques6" name="ques6"> The right amount <br>
+            <input type="radio" id="ques6" name="ques6"> Too little <br>
+        </div>
+        <div class="form-control">
+            <label for="ques7" id="ques7">What is the best part about being an athlete in this school?</label><br>
+            <textarea name="ques7" id="ques7" cols="100" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="ques8" id="ques8">What is the worst part about being an athlete in this school?</label><br>
+            <textarea name="ques8" id="ques8" cols="100" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="ques9" id="ques9">What could be done to improve the athletic experience in this school?</label><br>
+            <textarea name="ques9" id="ques9" cols="100" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="ques10" id="ques10">Overall, are you satisfied with your athletic experience in this school?</label><br>
+            <input type="radio" id="ques10" name="ques10"> Satisfied <br>
+            <input type="radio" id="ques10" name="ques10"> Neither satisfied nor dissatisfied <br>
+            <input type="radio" id="ques10" name="ques10"> Not satisfied <br>
+        </div>
+        <div id="foot">
+            <input type="button" value="Submit" class="btns">
+        </div>
+    </div>
+    </form>
+</body>
+</html>
